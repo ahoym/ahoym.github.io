@@ -1,4 +1,18 @@
 require('../sass/app.scss');
 
-console.log('hello world!');
-console.log('hello world!');
+import React from 'react';
+
+import Hero from './content/hero';
+
+
+export default class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <Hero />
+      </div>
+    );
+  }
+}
+
+React.render(<App />, document.getElementById('app'));
