@@ -1,4 +1,4 @@
-require('../../sass/hero.scss');
+import '../../sass/hero.scss';
 
 import React from 'react';
 
