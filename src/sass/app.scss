@@ -9,7 +9,7 @@ $app-font-family: 'Trebuchet MS', sans-serif;
 
 // Set root font-size for rem's
 html {
-  font-size: 20px;
+  font-size: 18px;
   font-family: $app-font-family;
 }
 
@@ -28,5 +28,18 @@ section {
 
   div {
     @extend .flex-container;
+  }
+}
+
+
+@media (max-width: 1028px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 10px;
   }
 }
