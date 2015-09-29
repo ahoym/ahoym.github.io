@@ -1,7 +1,9 @@
 'use strict';
 
-var path = require('path');
+var autoprefixer = require('autoprefixer');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var path = require('path');
+var precss = require('precss');
 
 var ROOT_PATH = './src/js/';
 var entries = [ path.resolve(ROOT_PATH, 'app.js') ];
@@ -32,7 +34,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loader: ExtractTextPlugin.extract('css!sass', { publicPath: '' })
+        loader: ExtractTextPlugin.extract('css!postcss!sass', { publicPath: '' })
       },
       {
         test: /\.jpg$/,
@@ -44,5 +46,8 @@ module.exports = {
     new ExtractTextPlugin('style.css', {
       allChunks: true
     })
-  ]
+  ],
+  postcss: function () {
+    return [autoprefixer, precss];
+  }
 };
