@@ -14,12 +14,19 @@ html {
 }
 
 // Override default webkit margins
-body, p {
+body, p, h1, h2 {
   margin: 0;
 }
+
+h1 { font-size: 6rem; }
+h2 { font-size: 3rem; }
 
 section {
   @extend .flex-container;
   height: 100vh;
   width: 100vw;
+
+  div {
+    @extend .flex-container;
+  }
 }

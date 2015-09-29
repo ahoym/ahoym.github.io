@@ -1,4 +1,54 @@
 .hero {
   background: url('../assets/img/golden-gate.jpg') no-repeat center center fixed;
   background-size: cover;
+  padding: 2rem;
+  text-align: center;
+
+  &__content {
+    flex-flow: column wrap;
+    text-transform: uppercase;
+  }
+
+  &__name {
+    border-bottom: 1px solid black;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  &__title {
+    color: white;
+    margin-bottom: 10rem;
+  }
+
+  button {
+    background: Transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 0.75rem;
+    letter-spacing: 0.1rem;
+    padding: 0.75rem 4rem;
+    text-transform: uppercase;
+
+    // Javascript-less sweep right transition
+    overflow:hidden;
+    position: relative;
+    &:after {
+      background: #5bcaff;
+      bottom: 0;
+      content: '';
+      height: 3px;
+      left: -10%;
+      position: absolute;
+      transform: skewX(15deg);
+      transition: .3s;
+      width: 0;
+    }
+    &:hover {
+      cursor: pointer;
+      &:after {
+        left: -10%;
+        width: 120%;
+      }
+    }
+  }
 }

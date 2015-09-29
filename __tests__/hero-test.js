@@ -19,4 +19,22 @@ describe('Hero view', () => {
 
     expect(heroSectionEl).toBeDefined();
   });
+
+  it('renders my name', () => {
+    let name = TestUtils.findRenderedDOMComponentWithTag(
+                        heroView, 'h1');
+    let nameEl = React.findDOMNode(name);
+
+    expect(nameEl.className).toContain('hero__name');
+    expect(nameEl.innerHTML).toBe('Malcolm Ahoy');
+  });
+
+  it('renders my title', () => {
+    let title = TestUtils.findRenderedDOMComponentWithTag(
+                        heroView, 'h2');
+    let titleEl = React.findDOMNode(title);
+
+    expect(titleEl.className).toContain('hero__title');
+    expect(titleEl.innerHTML).toBe('Web Application Developer.');
+  });
 });
