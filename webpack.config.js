@@ -34,7 +34,11 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loader: ExtractTextPlugin.extract('css!postcss!sass', { publicPath: '' })
+        loader: ExtractTextPlugin.extract(
+          'css?sourceMap!' +
+          'postcss!' +
+          'sass?sourceMap',
+          { publicPath: '' })
       },
       {
         test: /\.jpg$/,
@@ -48,6 +52,7 @@ module.exports = {
     })
   ],
   postcss: function () {
-    return [autoprefixer, precss];
+    return [
+      autoprefixer({ browsers: [ 'last 2 version' ] }), precss];
   }
 };
