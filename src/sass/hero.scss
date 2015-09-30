@@ -1,10 +1,10 @@
 .hero {
   background: url('../assets/img/golden-gate.jpg') no-repeat center center fixed;
   background-size: cover;
-  padding: 2rem;
   text-align: center;
 
   &__content {
+    @extend .flex-container;
     flex-flow: column wrap;
     text-transform: uppercase;
   }

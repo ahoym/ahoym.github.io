@@ -4,3 +4,13 @@
   flex-flow: row wrap;
   justify-content: center;
 }
+
+.clearfix {
+  height: 100%;
+
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}

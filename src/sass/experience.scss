@@ -1,0 +1,26 @@
+.experience {
+  background-color: #EFD75B;
+
+  h3 {
+    border-bottom: 1px solid black;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+
+  &__companies {
+    width: 80%;
+  }
+
+  &__company {
+    margin: 0.5rem 0;
+  }
+
+  &__title {
+    float: left;
+  }
+
+  &__duration {
+    float: right;
+    font-style: italic;
+  }
+}

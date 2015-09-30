@@ -2,6 +2,7 @@ require('../sass/app.scss');
 
 import React from 'react';
 
+import Experience from './content/experience';
 import Hero from './content/hero';
 
 
@@ -10,6 +11,7 @@ export default class App extends React.Component {
     return (
       <div>
         <Hero />
+        <Experience />
       </div>
     );
   }
