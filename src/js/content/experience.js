@@ -11,13 +11,13 @@ export default class Experience extends React.Component {
           <div>
             <h3>Experience</h3>
             <h4 className='experience__company'>Yola.com</h4>
-            <div className='clearfix'>
-              <span className='experience__title'>
+            <div className='experience__info clearfix'>
+              <div className='experience__title'>
                 Web Application Developer
-              </span>
-              <span className='experience__duration'>
+              </div>
+              <div className='experience__duration'>
                 June 2014 - September 2015
-              </span>
+              </div>
             </div>
             <ul className='experience__duties'>
               <li>

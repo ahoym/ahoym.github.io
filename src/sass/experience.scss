@@ -1,3 +1,6 @@
+@import 'extendables';
+
+
 .experience {
   background-color: #EFD75B;
 
@@ -15,12 +18,16 @@
     margin: 0.5rem 0;
   }
 
-  &__title {
-    float: left;
+  &__duration {
+    margin-left: auto;
+    font-style: italic;
   }
 
-  &__duration {
-    float: right;
-    font-style: italic;
+  &__info {
+    @extend .flex-container;
+  }
+
+  &__title {
+    align-self: flex-start;
   }
 }
