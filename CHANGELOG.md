@@ -1,3 +1,10 @@
+# 0.1.1
++ Make the 'Get to know me' button in the Hero section to smooth scroll
+  to my experience section.
++ Add `smoothscroll` npm package. I helped this library become
+  `npm install`-able and allows jQuery-less smooth scroll transitions
++ Add click handler for Hero component button, and test to confirm it.
+
 # 0.1.0
 + Add Experience React component, styles, spec.
 
