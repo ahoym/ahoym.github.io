@@ -38,6 +38,11 @@ ul {
   }
 }
 
+#app {
+  @extend .flex-container;
+  flex-flow: column wrap;
+}
+
 
 @media (max-width: 1028px) {
   html {
