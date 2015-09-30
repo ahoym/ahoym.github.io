@@ -22,20 +22,18 @@ export default class Experience extends React.Component {
             <ul className='experience__duties'>
               <li>
                 Converted confusing, legacy javascript IIFEs into modern,
-                 well tested modules with browserify, mocha.js, and chai.js.
-                 Models saved state with Object-oriented design in mind.
+                 well tested modules. Object-oriented models saved state where
+                 appropriate.
               </li>
               <li>
-                Engineer and develop npm-installable javascript client-side
-                 libraries, designed to request for and consume JSON APIs.
-                 Performed AJAX requests with superagent.js, and in one case
-                 when handling binary data (.mo files), native XMLHttpRequests.
+                Engineer and develop client-side javascript libraries,
+                 designed to request for and consume JSON APIs.
                  This reduced code duplication across applications.
               </li>
               <li>
-                Made blocking, synchronous rendering asynchronous with javascript
-                 promises (specifically Q.js) and functional programming, which
-                 made user experience better by displaying HTML elements faster.
+                Made blocking, synchronous rendering asynchronous with
+                 javascript promises and functional programming, which made
+                 user experience better by displaying HTML elements faster.
               </li>
               <li>
                 Led the integration of Segment, a customer data hub,
@@ -44,8 +42,8 @@ export default class Experience extends React.Component {
                  analytics tools easier.
               </li>
               <li>
-                Developed automated dev and build tasks with Gulp.js
-                 (or Grunt.js), making development for other engineers simpler.
+                Developed automated dev and build tasks, making development
+                 for other engineers simpler.
               </li>
             </ul>
           </div>
