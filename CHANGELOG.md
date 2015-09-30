@@ -1,3 +1,7 @@
+# 0.1.3
++ Summarize experience at Yola more succinctly
++ Flexbox the #app containing div, as well as the company title/duration.
+
 # 0.1.2
 + Add `<meta>` tag for viewport, for responsive mobile improvements.
 + Add favicon
