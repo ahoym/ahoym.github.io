@@ -1,3 +1,7 @@
+# 0.1.2
++ Add `<meta>` tag for viewport, for responsive mobile improvements.
++ Add favicon
+
 # 0.1.1
 + Make the 'Get to know me' button in the Hero section to smooth scroll
   to my experience section.
