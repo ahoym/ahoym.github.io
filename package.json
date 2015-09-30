@@ -32,7 +32,8 @@
   },
   "homepage": "https://github.com/ahoym/ahoym",
   "dependencies": {
-    "react": "^0.13.3"
+    "react": "^0.13.3",
+    "smoothscroll": "^0.2.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.0.3",

@@ -6,9 +6,12 @@ describe('Hero view', () => {
   let React = require('react/addons');
 
   let TestUtils = React.addons.TestUtils;
+  let clickMock;
   let heroView;
 
   beforeEach(() => {
+    clickMock = jest.genMockFunction();
+    Hero.prototype.scrollToExperience = clickMock;
     heroView = TestUtils.renderIntoDocument(<Hero />);
   });
 
@@ -36,5 +39,22 @@ describe('Hero view', () => {
 
     expect(titleEl.className).toContain('hero__title');
     expect(titleEl.innerHTML).toBe('Web Application Developer.');
+  });
+
+  it('renders a button', () => {
+    let button = TestUtils.findRenderedDOMComponentWithTag(heroView, 'button');
+    let buttonEl = React.findDOMNode(button);
+
+    expect(buttonEl.className).toContain('hero__btn');
+    expect(buttonEl.innerHTML).toBe('Get to know me');
+  });
+
+  it('button calls the scrollToExperience callback on click', () => {
+    let button = TestUtils.findRenderedDOMComponentWithTag(heroView, 'button');
+
+    TestUtils.Simulate.click(button);
+
+    // clickMock generated in beforeEach block
+    expect(clickMock).toBeCalled();
   });
 });
