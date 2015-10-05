@@ -1,3 +1,7 @@
+# 0.1.4
++ Add `simple-scroll-hook`, a library for making scroll transitions simpler.
++ Add fade-in, slide-up transition for experience text.
+
 # 0.1.3
 + Summarize experience at Yola more succinctly
 + Flexbox the #app containing div, as well as the company title/duration.
