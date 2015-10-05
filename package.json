@@ -33,6 +33,7 @@
   "homepage": "https://github.com/ahoym/ahoym",
   "dependencies": {
     "react": "^0.13.3",
+    "simple-scroll-hook": "^0.2.0",
     "smoothscroll": "^0.2.1"
   },
   "devDependencies": {

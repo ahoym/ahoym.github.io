@@ -2,12 +2,23 @@ import '../../sass/experience.scss';
 
 import React from 'react';
 
+import scrollHook from 'simple-scroll-hook';
+
 
 export default class Experience extends React.Component {
+  componentDidMount() {
+    let experienceContent = React.findDOMNode(this.refs.experienceContent);
+
+    scrollHook.register(experienceContent, {
+      initialStates: 'hidden',
+      finalStates: 'slide-up'
+    });
+  }
+
   render() {
     return (
       <section className='experience'>
-        <div className='experience__companies'>
+        <div className='experience__companies hidden' ref='experienceContent'>
           <div>
             <h3>Experience</h3>
             <h4 className='experience__company'>Yola.com</h4>
