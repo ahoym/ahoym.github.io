@@ -29,6 +29,7 @@ section {
   height: 100vh;
   padding: 2rem;
   width: 100vw;
+  border: 1px solid black;
 }
 
 ul {
@@ -44,6 +45,10 @@ ul {
   flex-flow: column wrap;
 }
 
+.dive {
+  background: url('../assets/img/dive.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
 
 @media (max-width: 1028px) {
   html {

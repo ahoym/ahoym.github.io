@@ -1,3 +1,6 @@
+# 0.2.2
++ Add interim picture between content
+
 # 0.2.1
 + Add transition to last item in Technology section, make animation time longer.
 

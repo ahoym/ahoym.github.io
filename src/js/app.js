@@ -18,6 +18,7 @@ export default class App extends React.Component {
       <div>
         <Hero />
         <Experience />
+        <section className='dive'></section>
         <Tech />
       </div>
     );
