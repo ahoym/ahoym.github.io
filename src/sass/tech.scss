@@ -1,14 +1,14 @@
+@import 'variables';
 @import 'extendables';
 @import 'transitions';
 
-$title-color: #E0E0E0;
 
 .tech {
-  background-color: #6fa7cb;
+  background-color: $app-blue;
 
   h3 {
-    color: $title-color;
-    border-color: $title-color;
+    color: $app-white;
+    border-color: $app-white;
   }
 
   &__category {
@@ -17,7 +17,7 @@ $title-color: #E0E0E0;
 
   &__item {
     @extend .flex-container;
-  }  
+  }
 
   &__content {
     width: 80%;
@@ -39,8 +39,8 @@ $title-color: #E0E0E0;
   }
 
   &__list-title {
-    border-bottom: 1px solid $title-color;
-    color: $title-color;
+    border-bottom: 1px solid $app-white;
+    color: $app-white;
     font-size: 1.25rem;
     font-weight: bold;
     margin: 0.5rem 0;

@@ -1,13 +1,12 @@
+@import 'variables';
 @import 'extendables';
 
 
 .experience {
-  background-color: #EFD75B;
+  background-color: $app-white;
 
   h3 {
-    border-bottom: 1px solid black;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
+    color: $app-blue;
   }
 
   &__companies {
