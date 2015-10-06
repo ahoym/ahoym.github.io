@@ -1,3 +1,7 @@
+# 0.2.0
++ Add Technology React component, styles, specs.
++ Make the colors across the website a little more consistent.
+
 # 0.1.4
 + Add `simple-scroll-hook`, a library for making scroll transitions simpler.
 + Add fade-in, slide-up transition for experience text.
