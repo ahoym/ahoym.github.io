@@ -1,3 +1,6 @@
+# 0.2.1
++ Add transition to last item in Technology section, make animation time longer.
+
 # 0.2.0
 + Add Technology React component, styles, specs.
 + Make the colors across the website a little more consistent.

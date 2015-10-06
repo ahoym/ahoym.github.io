@@ -48,13 +48,13 @@
 
   .animation--stagger-in {
     li {
-      @for $i from 1 through 5 {
+      @for $i from 1 through 6 {
         &:nth-child(#{$i}) {
           .tech__category {
-            animation: slide-in-right #{$i * .2}s ease-in;
+            animation: slide-in-right #{$i * .25}s ease-in;
           }
           .tech__sprites {
-            animation: slide-in-left #{$i * .2}s ease-in;
+            animation: slide-in-left #{$i * .25}s ease-in;
           }
         }
       }
