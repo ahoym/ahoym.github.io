@@ -1,0 +1,96 @@
+@mixin stitches-sprite($x: 0, $y: 0, $width: 0, $height: 0) {
+  background-position: $x $y;
+  width: $width;
+  height: $height;
+}
+
+.sprite {
+  background-image: url('../assets/img/spritesheet.png');
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin: 0 5px;
+
+  &--backbone {
+    @include stitches-sprite(-5px, -5px, 52px, 64px);
+  }
+
+  &--browserify {
+    @include stitches-sprite(-67px, -5px, 57px, 64px);
+  }
+
+  &--chai {
+    @include stitches-sprite(-134px, -5px, 57px, 64px);
+  }
+
+  &--css3 {
+    @include stitches-sprite(-201px, -5px, 48px, 64px);
+  }
+
+  &--django {
+    @include stitches-sprite(-5px, -79px, 141px, 64px);
+  }
+
+  &--grunt {
+    @include stitches-sprite(-259px, -5px, 64px, 64px);
+  }
+
+  &--gulp {
+    @include stitches-sprite(-156px, -79px, 64px, 64px);
+  }
+
+  &--html5 {
+    @include stitches-sprite(-230px, -79px, 64px, 64px);
+  }
+
+  &--jasmine {
+    @include stitches-sprite(-304px, -79px, 64px, 64px);
+  }
+
+  &--javascript {
+    @include stitches-sprite(-5px, -153px, 64px, 64px);
+  }
+
+  &--jest {
+    @include stitches-sprite(-79px, -153px, 128px, 64px);
+  }
+
+  &--karma {
+    @include stitches-sprite(-217px, -153px, 64px, 64px);
+  }
+
+  &--less {
+    @include stitches-sprite(-5px, -227px, 143px, 64px);
+  }
+
+  &--mocha {
+    @include stitches-sprite(-291px, -153px, 64px, 64px);
+  }
+
+  &--python {
+    @include stitches-sprite(-158px, -227px, 189px, 64px);
+  }
+
+  &--rails {
+    @include stitches-sprite(-5px, -301px, 49px, 64px);
+  }
+
+  &--react {
+    @include stitches-sprite(-64px, -301px, 64px, 64px);
+  }
+
+  &--ruby {
+    @include stitches-sprite(-138px, -301px, 64px, 64px);
+  }
+
+  &--sass {
+    @include stitches-sprite(-212px, -301px, 85px, 64px);
+  }
+
+  &--sinon {
+    @include stitches-sprite(-333px, -5px, 82px, 64px);
+  }
+
+  &--webpack {
+    @include stitches-sprite(-378px, -79px, 64px, 64px);
+  }
+}

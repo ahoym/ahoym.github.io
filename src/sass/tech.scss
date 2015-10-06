@@ -1,0 +1,63 @@
+@import 'extendables';
+@import 'transitions';
+
+$title-color: #E0E0E0;
+
+.tech {
+  background-color: #6fa7cb;
+
+  h3 {
+    color: $title-color;
+    border-color: $title-color;
+  }
+
+  &__category {
+    align-self: flex-start;
+  }
+
+  &__item {
+    @extend .flex-container;
+  }  
+
+  &__content {
+    width: 80%;
+  }
+
+  &__list {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+
+    li {
+      height: 64px;
+      margin: 2rem 0;
+    }
+  }
+
+  &__sprites {
+    margin-left: auto;
+  }
+
+  &__list-title {
+    border-bottom: 1px solid $title-color;
+    color: $title-color;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+  }
+
+  .animation--stagger-in {
+    li {
+      @for $i from 1 through 5 {
+        &:nth-child(#{$i}) {
+          .tech__category {
+            animation: slide-in-right #{$i * .2}s ease-in;
+          }
+          .tech__sprites {
+            animation: slide-in-left #{$i * .2}s ease-in;
+          }
+        }
+      }
+    }
+  }
+}

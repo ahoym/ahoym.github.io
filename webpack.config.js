@@ -41,7 +41,7 @@ module.exports = {
           { publicPath: '' })
       },
       {
-        test: /\.jpg$/,
+        test: /\.(jpg|png)$/,
         loader: 'file-loader'
       }
     ]

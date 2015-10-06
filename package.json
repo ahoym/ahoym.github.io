@@ -11,7 +11,8 @@
   "jest": {
     "scriptPreprocessor": "<rootDir>/jest-script-preprocessor",
     "unmockedModulePathPatterns": [
-      "<rootDir>/node_modules/react"
+      "<rootDir>/node_modules/react",
+      "<rootDir>/node_modules/classnames"
     ]
   },
   "repository": {
@@ -32,6 +33,7 @@
   },
   "homepage": "https://github.com/ahoym/ahoym",
   "dependencies": {
+    "classnames": "^2.1.5",
     "react": "^0.13.3",
     "simple-scroll-hook": "^0.2.0",
     "smoothscroll": "^0.2.1"

@@ -2,6 +2,7 @@ $app-font-family: 'Trebuchet MS', sans-serif;
 
 @import 'extendables';
 @import 'transitions';
+@import 'common';
 
 
 * {
@@ -32,7 +33,7 @@ section {
 }
 
 ul {
-  padding: 1.25rem;
+  padding: 1.25rem 0 0 1.25rem;
 
   li {
     margin: 1rem 0;
@@ -54,5 +55,9 @@ ul {
 @media (max-width: 768px) {
   html {
     font-size: 10px;
+  }
+
+  .tech__sprites {
+    display: none;
   }
 }
