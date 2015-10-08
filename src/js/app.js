@@ -6,6 +6,7 @@ import scrollHook from 'simple-scroll-hook';
 import Experience from './content/experience';
 import Hero from './content/hero';
 import Tech from './content/tech';
+import DeepDive from './content/deep-dive';
 
 
 export default class App extends React.Component {
@@ -20,6 +21,7 @@ export default class App extends React.Component {
         <Experience />
         <section className='dive'></section>
         <Tech />
+        <DeepDive />
       </div>
     );
   }

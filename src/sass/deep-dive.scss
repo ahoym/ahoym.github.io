@@ -1,0 +1,50 @@
+@import 'transitions';
+
+
+.deep-dive {
+  @extend .flex-container;
+  background-color: #000026;
+  background-size: cover;
+  position: relative;
+
+  &__particles {
+    backface-visibility: hidden;
+    height: 100%;
+    left: 0;
+    list-style: none;
+    margin: 0 0 0 10vw;
+    padding: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    transform-style: preserve-3d;
+
+    li {
+      backface-visibility: hidden;
+      display: block;
+      height: 100%;
+      left: 0;
+      margin: 0;
+      position: absolute;
+      top: 0;
+      transform-style: preserve-3d;
+
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &__large-particles img {
+    animation: orbit 30s linear infinite;
+  }
+
+  &__med-particles img {
+    animation: orbit 60s linear infinite;
+  }
+
+  &__small-particles img {
+    animation: orbit 40s reverse infinite;
+  }
+}
