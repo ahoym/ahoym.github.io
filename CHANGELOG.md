@@ -1,3 +1,6 @@
+# 0.3.1
++ Make DeepDive particles move away from mouse move on the Y-axis as well.
+
 # 0.3.0
 + Add DeepDive React component, styles, specs. This section is purely CSS only
    but has high interactivity. Just a fun project to do and have.

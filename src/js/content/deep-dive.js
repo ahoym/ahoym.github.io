@@ -24,7 +24,7 @@ export default class DeepDive extends React.Component {
 
   computeMouseDeltas(mouseX, mouseY) {
     let particleDeltaX = (this.state.center - mouseX) / 30;
-    let particleDeltaY = (mouseY - window.innerHeight / 2) / 10;
+    let particleDeltaY = -(mouseY - window.innerHeight / 2) / 10;
 
     return [ particleDeltaX, particleDeltaY ];
   }
