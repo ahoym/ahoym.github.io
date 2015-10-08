@@ -1,3 +1,7 @@
+# 0.3.0
++ Add DeepDive React component, styles, specs. This section is purely CSS only
+   but has high interactivity. Just a fun project to do and have.
+
 # 0.2.2
 + Add interim picture between content
 
@@ -22,9 +26,9 @@
 
 # 0.1.1
 + Make the 'Get to know me' button in the Hero section to smooth scroll
-  to my experience section.
+   to my experience section.
 + Add `smoothscroll` npm package. I helped this library become
-  `npm install`-able and allows jQuery-less smooth scroll transitions
+   `npm install`-able and allows jQuery-less smooth scroll transitions
 + Add click handler for Hero component button, and test to confirm it.
 
 # 0.1.0
@@ -46,7 +50,7 @@
   + file    - For porting and hashing assets
 + Add Hero (it's a marketing term, I don't know why) React component
   + Add associated styles. SASS written with the BEM methodology for
-     consistency and semantic meaning for classes.
+      consistency and semantic meaning for classes.
   + Add simple jest test.
 
 
