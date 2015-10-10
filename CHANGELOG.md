@@ -1,3 +1,8 @@
+# 0.4.0
++ Add AboutMe React component, styles, specs.
++ Change order of sections. AboutMe is now below Hero.
++ Change styles of sections, add transition classes.
+
 # 0.3.1
 + Make DeepDive particles move away from mouse move on the Y-axis as well.
 
