@@ -48,6 +48,7 @@
 
   &--javascript {
     @include stitches-sprite(-5px, -153px, 64px, 64px);
+    border: 1px solid black;
   }
 
   &--jest {

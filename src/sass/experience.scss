@@ -3,10 +3,11 @@
 
 
 .experience {
-  background-color: $app-white;
+  background-color: $app-blue;
 
   h3 {
-    color: $app-blue;
+    color: $app-white;
+    text-shadow: 1px 1px 1px black;
   }
 
   &__companies {

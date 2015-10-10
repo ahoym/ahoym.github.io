@@ -4,11 +4,16 @@
 
 
 .tech {
-  background-color: $app-blue;
+  background-color: $app-yellow;
 
-  h3 {
+  &--section-colors {
     color: $app-white;
     border-color: $app-white;
+    text-shadow: 1px 1px 1px black;
+  }
+
+  h3 {
+    @extend .tech--section-colors;
   }
 
   &__category {
@@ -39,8 +44,8 @@
   }
 
   &__list-title {
-    border-bottom: 1px solid $app-white;
-    color: $app-white;
+    @extend .tech--section-colors;
+    border-bottom: 1px solid;
     font-size: 1.25rem;
     font-weight: bold;
     margin: 0.5rem 0;

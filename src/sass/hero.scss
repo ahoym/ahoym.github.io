@@ -29,6 +29,10 @@
     padding: 0.75rem 4rem;
     text-transform: uppercase;
 
+    &:focus {
+      outline: 0;
+    }
+
     // Javascript-less sweep right transition
     overflow:hidden;
     position: relative;
