@@ -1,0 +1,61 @@
+@import 'variables';
+@import 'extendables';
+@import 'transitions';
+
+
+.about {
+  h3 {
+    color: $app-blue;
+    border-color: $app-blue;
+    text-shadow: 1px 1px 1px black;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    padding-top: 0;
+
+    li {
+      margin: 0 0 1rem 0;
+    }
+  }
+
+  &__content {
+    width: 80%;
+  }
+
+  &__me {
+    @extend .flex-container;
+  }
+
+  &__picture {
+    padding: 1.5rem 2rem 2rem 0;
+
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  &__bio {
+    flex: 1;
+    margin-left: auto;
+  }
+
+  &__mantra {
+    font-style: italic;
+    text-align: center;
+  }
+
+  &--stagger-in-p {
+    p {
+      @for $i from 1 through 6 {
+        &:nth-child(#{$i}) {
+          animation: slide-in-left #{$i * .25}s ease-in;
+        }
+      }
+    }
+  }
+}

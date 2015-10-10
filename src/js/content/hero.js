@@ -8,7 +8,7 @@ export default class Hero extends React.Component {
   scrollToExperience(event) {
     event.preventDefault();
 
-    let experienceSection = document.querySelector('.experience');
+    let experienceSection = document.querySelector('section.about');
     smoothScroll(experienceSection, 1000);
   }
 
