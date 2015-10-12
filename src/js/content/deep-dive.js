@@ -1,11 +1,9 @@
 import '../../sass/deep-dive.scss';
-
-import React from 'react';
-
-
 import largeParticleLayer from '../../assets/img/large-particles.png';
 import medParticleLayer from '../../assets/img/med-particles.png';
 import smallParticleLayer from '../../assets/img/small-particles.png';
+
+import React from 'react';
 
 
 export default class DeepDive extends React.Component {
@@ -52,16 +50,13 @@ export default class DeepDive extends React.Component {
                onMouseMove={this.mouseUpdate.bind(this)}>
         <ul className='deep-dive__particles'>
           <li className='deep-dive__large-particles' ref='largeLayer'>
-            <img src={largeParticleLayer}
-                 alt='large particle layer'/>
+            <img src={largeParticleLayer} alt='large particle layer'/>
           </li>
           <li className='deep-dive__med-particles' ref='medLayer'>
-            <img src={medParticleLayer}
-                 alt='medium particle layer'/>
+            <img src={medParticleLayer} alt='medium particle layer'/>
           </li>
           <li className='deep-dive__small-particles' ref='smallLayer'>
-            <img src={smallParticleLayer}
-                 alt='small particle layer'/>
+            <img src={smallParticleLayer} alt='small particle layer'/>
           </li>
         </ul>
       </section>

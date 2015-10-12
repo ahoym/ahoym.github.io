@@ -9,8 +9,8 @@ import TechItem from './tech-item';
 
 export default class Tech extends React.Component {
   componentDidMount() {
-    let techContent = React.findDOMNode(this.refs.techContent);
-    let techList = React.findDOMNode(this.refs.techList);
+    let techContent = this.refs.techContent.getDOMNode();
+    let techList = this.refs.techList.getDOMNode();
 
     scrollHook.register(techContent, {
       initialStates: 'hidden',
@@ -20,22 +20,25 @@ export default class Tech extends React.Component {
   }
 
   render() {
+    let techCategories = this.props.categories.map((category) => {
+      return (<TechItem key={category.title} techCategory={category} />);
+    });
+
     return (
       <section className='tech'>
         <div className='tech__content hidden' ref='techContent'>
           <h3 className='common__section-title'>Technologies</h3>
           <ul className='tech__list' ref='techList'>
-            {this.props.categories.map((category) => {
-              return (<TechItem key={category.title}
-                                techCategory={category} />);
-            })}
+            {techCategories}
           </ul>
         </div>
       </section>
     );
   }
 }
-Tech.propTypes = { categories: React.PropTypes.array };
+Tech.propTypes = {
+  categories: React.PropTypes.array
+};
 Tech.defaultProps = {
   categories: [
     {

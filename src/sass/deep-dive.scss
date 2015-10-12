@@ -7,27 +7,28 @@
   background-size: cover;
   position: relative;
 
-  &__particles {
+  &--3d {
     backface-visibility: hidden;
     height: 100%;
-    left: 0;
-    list-style: none;
-    margin: 0 0 0 10vw;
-    padding: 0;
-    pointer-events: none;
+    margin: 0;
     position: absolute;
     top: 0;
     transform-style: preserve-3d;
+    width: 100%;
+  }
+
+  &__particles {
+    @extend .deep-dive--3d;
+    left: -2%;
+    list-style: none;
+    overflow: auto;
+    padding: 0;
+    pointer-events: none;
 
     li {
-      backface-visibility: hidden;
+      @extend .deep-dive--3d;
       display: block;
-      height: 100%;
       left: 0;
-      margin: 0;
-      position: absolute;
-      top: 0;
-      transform-style: preserve-3d;
 
       img {
         display: block;

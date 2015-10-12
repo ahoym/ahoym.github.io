@@ -4,11 +4,11 @@
 
 
 .tech {
-  background-color: $app-yellow;
+  background-color: $app-white;
 
   &--section-colors {
-    color: $app-white;
-    border-color: $app-white;
+    border-color: $app-blue;
+    color: $app-blue;
     text-shadow: 1px 1px 1px black;
   }
 
@@ -20,18 +20,18 @@
     align-self: flex-start;
   }
 
+  &__content {
+    width: 80%;
+  }  
+
   &__item {
     @extend .flex-container;
   }
 
-  &__content {
-    width: 80%;
-  }
-
   &__list {
-    width: 100%;
     list-style: none;
     padding: 0;
+    width: 100%;
 
     li {
       height: 64px;

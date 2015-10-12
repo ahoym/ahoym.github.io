@@ -6,7 +6,7 @@ import scrollHook from 'simple-scroll-hook';
 
 export default class Experience extends React.Component {
   componentDidMount() {
-    let experienceContent = React.findDOMNode(this.refs.experienceContent);
+    let experienceContent = this.refs.experienceContent.getDOMNode();
 
     scrollHook.register(experienceContent, {
       initialStates: 'hidden',

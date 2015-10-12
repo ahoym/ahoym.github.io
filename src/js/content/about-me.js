@@ -1,9 +1,8 @@
 import '../../sass/about-me.scss';
+import me from '../../assets/img/ahoym.jpg';
 
 import React from 'react';
 import scrollHook from 'simple-scroll-hook';
-
-import me from '../../assets/img/ahoym.jpg';
 
 
 export default class AboutMe extends React.Component {
@@ -83,7 +82,9 @@ export default class AboutMe extends React.Component {
     );
   }
 }
-AboutMe.propTypes = { contributions: React.PropTypes.array };
+AboutMe.propTypes = {
+  contributions: React.PropTypes.array
+};
 AboutMe.defaultProps = {
   contributions: [
     {

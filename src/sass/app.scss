@@ -26,11 +26,11 @@ h4 { font-size: 1.25rem; }
 
 section {
   @extend .flex-container;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
   height: 100vh;
   padding: 2rem;
   width: 100vw;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
 }
 
 ul {
@@ -39,6 +39,10 @@ ul {
   li {
     margin: 1rem 0;
   }
+}
+
+a {
+  color: $app-blue;
 }
 
 #app {

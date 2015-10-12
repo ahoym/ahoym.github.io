@@ -1,6 +1,6 @@
 .flex-container {
-  display: flex;
   align-items: center;
+  display: flex;
   flex-flow: row wrap;
   flex-wrap: wrap;
   justify-content: center;
@@ -11,8 +11,8 @@
 
   &:after {
     content: '';
-    display: table;
     clear: both;
+    display: table;
   }
 }
 
