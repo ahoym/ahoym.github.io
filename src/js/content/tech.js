@@ -54,16 +54,16 @@ Tech.defaultProps = {
       items: [ 'Rails', 'Django' ]
     },
     {
-      title: 'Front-end Frameworks',
+      title: 'Front-end MV*',
       items: [ 'Backbone', 'React' ]
     },
     {
       title: 'Front-end Testing Libraries',
-      items: [ 'karma', 'mocha', 'chai', 'jasmine', 'jest' ]
+      items: [ 'karma', 'mocha', 'jasmine', 'jest' ]
     },
     {
       title: 'Javascript Development',
-      items: [ 'webpack', 'browserify', 'gulp', 'grunt' ]
+      items: [ 'babel', 'webpack', 'browserify', 'gulp', 'grunt' ]
     }
   ]
 };
