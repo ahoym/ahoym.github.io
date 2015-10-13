@@ -41,7 +41,11 @@ module.exports = {
           { publicPath: '' })
       },
       {
-        test: /\.(jpg|png)$/,
+        test: /\.woff(\?[0-9]+)?$/,
+        loader: "url-loader?limit=10000&minetype=application/font-woff"
+      },
+      {
+        test: /\.(jpg|png|ttf|eot|svg)(\?[0-9]+)?$/,
         loader: 'file-loader'
       }
     ]
