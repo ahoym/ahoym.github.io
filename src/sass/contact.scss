@@ -1,0 +1,51 @@
+@import 'variables';
+@import 'extendables';
+@import 'fontello/scss/fontello';
+
+
+@mixin fontello-icon($unicode) {
+  &:before {
+    content: $unicode;
+    font-family: 'fontello';
+    padding-right: 1rem;
+  }
+}
+
+.contact {
+  background-color: black;
+  color: $app-white;
+
+  h1 {
+    border-bottom: 1px solid $app-white;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      font-size: 1.5rem;
+      margin: 0 5vw;
+    }
+  }
+
+  &__content {
+    @extend .flex-container;
+    flex-flow: column wrap;
+  }
+
+  &__methods {
+    @extend .flex-container;
+  }
+
+  &__github {
+    @include fontello-icon('\e804');
+  }
+
+  &__linkedin {
+    @include fontello-icon('\e802');
+  }
+
+  &__email {
+    @include fontello-icon('\e800');
+  }
+}

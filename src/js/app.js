@@ -8,6 +8,7 @@ import AboutMe from './content/about-me';
 import Experience from './content/experience';
 import DeepDive from './content/deep-dive';
 import Tech from './content/tech';
+import Contact from './content/contact';
 
 
 export default class App extends React.Component {
@@ -24,6 +25,7 @@ export default class App extends React.Component {
         <Experience />
         <DeepDive />
         <Tech />
+        <Contact />
       </div>
     );
   }
