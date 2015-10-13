@@ -1,3 +1,8 @@
+# 0.6.0
++ Add Contact React component, styles, specs.
++ Add webpack loader for handling icon files (ttf, eot, svg, woff).
++ Add fontello, a specifically pruned down font-awesome.
+
 # 0.5.1
 + `display: none;` code contributed repos when on mobile.
 

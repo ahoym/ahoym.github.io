@@ -5,6 +5,7 @@
 
 @mixin fontello-icon($unicode) {
   &:before {
+    color: $app-white;
     content: $unicode;
     font-family: 'fontello';
     padding-right: 1rem;
@@ -47,5 +48,6 @@
 
   &__email {
     @include fontello-icon('\e800');
+    color: $app-blue;
   }
 }

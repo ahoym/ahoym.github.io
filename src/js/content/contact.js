@@ -38,6 +38,7 @@ export default class Contact extends React.Component {
           <h1 className='common__section-title'>Contact Me</h1>
           <ul className='contact__methods hidden' ref='contactMethods'>
             {contactMethods}
+            <li className='contact__email'>malcolmahoy@gmail.com</li>
           </ul>
         </div>
       </section>
@@ -56,10 +57,6 @@ Contact.defaultProps = {
     {
       site: 'LinkedIn',
       link: 'https://www.linkedin.com/pub/malcolm-ahoy/78/909/a41'
-    },
-    {
-      site: 'Email',
-      link: 'malcolmahoy@gmail.com'
     }
   ]
 };

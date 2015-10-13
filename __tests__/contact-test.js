@@ -64,11 +64,8 @@ describe('Contact', () => {
     let expectedEmail = 'malcolmahoy@gmail.com';
     let emailEl = TestUtils.findRenderedDOMComponentWithClass(
                     contactView, 'contact__email').getDOMNode();
-    let emailLink = TestUtils.findRenderedDOMComponentWithClass(
-                    contactView, 'contact__email-link').getDOMNode();
 
     expect(emailEl.tagName).toEqual('LI');
-    expect(emailLink.innerHTML).toEqual('Email');
-    expect(emailLink.getAttribute('href')).toEqual(expectedEmail);
+    expect(emailEl.innerHTML).toEqual(expectedEmail);
   });
 });
