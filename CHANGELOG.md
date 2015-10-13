@@ -1,3 +1,17 @@
+# 0.5.0
++ Prune and update content of Technology section.
+  + Remove chai from "Front-end Testing". This leaves only testing frameworks
+     and test runners in the section. It also narrows the sprite list.
+  + Add babel to "Javascript Development" to show knowledge of ES6. This also
+     expands the category sprite list to be a consistent.
+  + Re-order categories so the categories with more sprites are focused top.
+  + Add new spritesheet and .scss file to only have sprites that are used.
++ Code clean up and enforce consistency.
+  + Alphabetize scss classes, modifiers, and their properties.
+  + Consistent spacing in JS files and tests.
+  + Consistent `import` structure in JS files. Imported assets are now at top.
++ Expand unit test coverage. Mock and test external libraries and their `args`.
+
 # 0.4.0
 + Add AboutMe React component, styles, specs.
 + Change order of sections. AboutMe is now below Hero.

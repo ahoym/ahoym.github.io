@@ -50,20 +50,20 @@ Tech.defaultProps = {
       items: [ 'HTML5', 'CSS3', 'SASS', 'LESS' ]
     },
     {
-      title: 'Back-end Frameworks',
-      items: [ 'Rails', 'Django' ]
-    },
-    {
-      title: 'Front-end MV*',
-      items: [ 'Backbone', 'React' ]
+      title: 'Javascript Development',
+      items: [ 'babel', 'webpack', 'browserify', 'gulp', 'grunt' ]
     },
     {
       title: 'Front-end Testing Libraries',
       items: [ 'karma', 'mocha', 'jasmine', 'jest' ]
     },
     {
-      title: 'Javascript Development',
-      items: [ 'babel', 'webpack', 'browserify', 'gulp', 'grunt' ]
+      title: 'Front-end MV*',
+      items: [ 'Backbone', 'React' ]
+    },
+    {
+      title: 'Back-end Frameworks',
+      items: [ 'Rails', 'Django' ]
     }
   ]
 };
