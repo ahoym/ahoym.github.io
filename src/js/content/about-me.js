@@ -69,10 +69,11 @@ export default class AboutMe extends React.Component {
                  code to be much more digestable, easier to unit test, and often
                  the simplest solution turns out to be the best one.
               </p>
-              <p>
+              <p className='hide-when-mobile'>
                 Here are a few repos I’ve made code contributions to:
               </p>
-              <ul className='about__contributions hidden' ref='contributions'>
+              <ul className='about__contributions hide-when-mobile hidden'
+                  ref='contributions'>
                 {ossContributions}
               </ul>
             </div>

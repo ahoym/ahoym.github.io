@@ -67,6 +67,10 @@ a {
     font-size: 10px;
   }
 
+  .hide-when-mobile {
+    display: none;
+  }
+
   .tech__item {
     justify-content: flex-start;
   }

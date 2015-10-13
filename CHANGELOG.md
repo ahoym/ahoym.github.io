@@ -1,3 +1,6 @@
+# 0.5.1
++ `display: none;` code contributed repos when on mobile.
+
 # 0.5.0
 + Prune and update content of Technology section.
   + Remove chai from "Front-end Testing". This leaves only testing frameworks
