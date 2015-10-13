@@ -4,46 +4,41 @@ jest.dontMock('../src/js/content/hero');
 describe('Hero view', () => {
   let Hero = require('../src/js/content/hero');
   let React = require('react/addons');
+  let smoothScrollMock = require('smoothscroll');
 
   let TestUtils = React.addons.TestUtils;
-  let clickMock;
   let heroView;
 
   beforeEach(() => {
-    clickMock = jest.genMockFunction();
-    Hero.prototype.scrollToExperience = clickMock;
     heroView = TestUtils.renderIntoDocument(<Hero />);
   });
 
   it('renders a hero section into the document', () => {
-    let heroSection = TestUtils.findRenderedDOMComponentWithClass(
-                        heroView, 'hero');
-    let heroSectionEl = React.findDOMNode(heroSection);
+    let heroSectionEl = TestUtils.findRenderedDOMComponentWithClass(
+                          heroView, 'hero').getDOMNode();
 
     expect(heroSectionEl).toBeDefined();
   });
 
   it('renders my name', () => {
-    let name = TestUtils.findRenderedDOMComponentWithTag(
-                        heroView, 'h1');
-    let nameEl = React.findDOMNode(name);
+    let nameEl = TestUtils.findRenderedDOMComponentWithTag(
+                    heroView, 'h1').getDOMNode();
 
     expect(nameEl.className).toContain('hero__name');
     expect(nameEl.innerHTML).toBe('Malcolm Ahoy');
   });
 
   it('renders my title', () => {
-    let title = TestUtils.findRenderedDOMComponentWithTag(
-                        heroView, 'h2');
-    let titleEl = React.findDOMNode(title);
+    let titleEl = TestUtils.findRenderedDOMComponentWithTag(
+                    heroView, 'h2').getDOMNode();
 
     expect(titleEl.className).toContain('hero__title');
     expect(titleEl.innerHTML).toBe('Web Application Developer.');
   });
 
   it('renders a button', () => {
-    let button = TestUtils.findRenderedDOMComponentWithTag(heroView, 'button');
-    let buttonEl = React.findDOMNode(button);
+    let buttonEl = TestUtils.findRenderedDOMComponentWithTag(
+                    heroView, 'button').getDOMNode();
 
     expect(buttonEl.className).toContain('hero__btn');
     expect(buttonEl.innerHTML).toBe('Get to know me');
@@ -51,10 +46,12 @@ describe('Hero view', () => {
 
   it('button calls the scrollToExperience callback on click', () => {
     let button = TestUtils.findRenderedDOMComponentWithTag(heroView, 'button');
+    // Time is the same as it is in hero.js
+    let expectedAnimationTime = 1000;
 
     TestUtils.Simulate.click(button);
 
-    // clickMock generated in beforeEach block
-    expect(clickMock).toBeCalled();
+    expect(smoothScrollMock.mock.calls.length).toEqual(1);
+    expect(smoothScrollMock.mock.calls[0]).toContain(expectedAnimationTime);
   });
 });

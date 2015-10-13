@@ -1,5 +1,6 @@
 jest.dontMock('../src/js/content/tech-item');
 
+
 describe('TechItem', () => {
   let TechItem = require('../src/js/content/tech-item');
   let React = require('react/addons');
@@ -17,34 +18,30 @@ describe('TechItem', () => {
   });
 
   it('renders a title', () => {
-    let title = TestUtils.findRenderedDOMComponentWithClass(
-                  techItemView, 'tech__list-title');
-    let titleEl = React.findDOMNode(title);
+    let titleEl = TestUtils.findRenderedDOMComponentWithClass(
+                  techItemView, 'tech__list-title').getDOMNode();
 
     expect(titleEl.innerHTML).toBe('Pokemon Cities');
   });
 
   it('renders category content', () => {
-    let content = TestUtils.findRenderedDOMComponentWithClass(
-                    techItemView, 'tech__list-content');
-    let contentEl = React.findDOMNode(content);
+    let contentEl = TestUtils.findRenderedDOMComponentWithClass(
+                    techItemView, 'tech__list-content').getDOMNode();
 
     expect(contentEl.innerHTML).toBe('Pallet, Viridian, Pewter, Cerulean');
   });
 
   it('renders a container for sprites', () => {
-    let spriteContainer = TestUtils.findRenderedDOMComponentWithClass(
-                            techItemView, 'tech__sprites');
-    let spriteContainerEl = React.findDOMNode(spriteContainer);
+    let spriteContainerEl = TestUtils.findRenderedDOMComponentWithClass(
+                            techItemView, 'tech__sprites').getDOMNode();
 
     expect(spriteContainerEl).toBeDefined();
     expect(spriteContainerEl.children.length).toBe(4);
   });
 
   it('renders sprites for each category item', () => {
-    let spriteContainer = TestUtils.findRenderedDOMComponentWithClass(
-                            techItemView, 'tech__sprites');
-    let spriteContainerEl = React.findDOMNode(spriteContainer);
+    let spriteContainerEl = TestUtils.findRenderedDOMComponentWithClass(
+                            techItemView, 'tech__sprites').getDOMNode();
     let [
       actualPallet,
       actualViridian,

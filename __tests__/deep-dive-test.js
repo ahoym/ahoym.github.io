@@ -12,6 +12,21 @@ describe('DeepDive', () => {
     deepDiveView = TestUtils.renderIntoDocument(<DeepDive />);
   });
 
+  it('when mounted, holds the particle layers in its state', () => {
+    let viewState = deepDiveView.state;
+
+    expect(viewState.largeLayer).toBeDefined();
+    expect(viewState.medLayer).toBeDefined();
+    expect(viewState.smallLayer).toBeDefined();
+
+    expect(viewState.largeLayer.className)
+      .toEqual('deep-dive__large-particles');
+    expect(viewState.medLayer.className)
+      .toEqual('deep-dive__med-particles');
+    expect(viewState.smallLayer.className)
+      .toEqual('deep-dive__small-particles');
+  });
+
   it('renders the section', () => {
     let sectionEl = TestUtils.findRenderedDOMComponentWithClass(
                       deepDiveView, 'deep-dive').getDOMNode();

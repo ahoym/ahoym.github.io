@@ -4,6 +4,13 @@ import React from 'react';
 
 export default class TechItem extends React.Component {
   render() {
+    let sprites = this.props.techCategory.items.map((item) => {
+      let specificSprite = 'sprite--' + item.toLowerCase();
+      let classes = classnames('sprite', specificSprite);
+
+      return (<span key={specificSprite} className={classes}></span>);
+    });
+
     return (
       <li className='tech__item'>
         <div className='tech__category'>
@@ -15,11 +22,7 @@ export default class TechItem extends React.Component {
           </p>
         </div>
         <div className='tech__sprites'>
-          {this.props.techCategory.items.map((item) => {
-            let specificSprite = 'sprite--' + item.toLowerCase();
-            let classes = classnames('sprite', specificSprite);
-            return (<span key={specificSprite} className={classes}></span>);
-          })}
+          {sprites}
         </div>
       </li>
     );
