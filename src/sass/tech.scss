@@ -22,21 +22,18 @@
 
   &__content {
     width: 80%;
-  }  
+  }
 
   &__item {
     @extend .flex-container;
+    height: 64px;
+    margin: 2rem 0;
   }
 
   &__list {
     list-style: none;
     padding: 0;
     width: 100%;
-
-    li {
-      height: 64px;
-      margin: 2rem 0;
-    }
   }
 
   &__sprites {

@@ -19,10 +19,22 @@ body, p, h1, h2, h3, h4, ul {
   margin: 0;
 }
 
-h1 { font-size: 6rem; }
-h2 { font-size: 3rem; }
-h3 { font-size: 2rem; }
-h4 { font-size: 1.25rem; }
+h1 {
+  font-size: 6rem;
+  pointer-events: none;
+}
+h2 {
+  font-size: 3rem;
+  pointer-events: none;
+}
+h3 {
+  font-size: 2rem;
+  pointer-events: none;
+}
+h4 {
+  font-size: 1.25rem;
+  pointer-events: none;
+}
 
 section {
   @extend .flex-container;
@@ -73,6 +85,7 @@ a {
 
   .tech__item {
     justify-content: flex-start;
+    margin: 0;
   }
 
   .tech__sprites {

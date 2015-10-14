@@ -1,3 +1,7 @@
+# 0.6.1
++ Add media query induced style changes for mobile improvements
++ More spacing and text alignment for contact view.
+
 # 0.6.0
 + Add Contact React component, styles, specs.
 + Add webpack loader for handling icon files (ttf, eot, svg, woff).
