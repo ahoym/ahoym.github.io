@@ -1,16 +1,16 @@
 # My (Malcolm Ahoy's) Personal Website
 
 ## Major Technologies Used
-+ [webpack][webpack] for module bundling and devlopment.
++ [webpack][webpack] for module bundling and development.
 + [babel][babel] for ES6 goodness.
 + [React][React] for views, and component specific event handling.
 + [Jest][Jest] for testing React components.
-+ [SASS][SASS] for more powerful CSS class declarations.
++ [SASS][SASS] for more powerful CSS functionality.
   + Used [BEM][BEM] methodology for for structured naming of CSS classes.
 + [autoprefixer][autoprefixer] for automatic vendor-prefixing CSS.
 
 Libraries used:
-+ [smoothScroll][smoothScroll] for smoothScroll animation from button press.
++ [smoothScroll][smoothScroll] for smooth scrolling animation from button press.
 + [simple-scroll-hook][s-s-h] for all the animations linked to scrolling.
 
 [webpack]: https://webpack.github.io/
@@ -30,7 +30,7 @@ The [CHANGELOG.md][CHANGELOG] has history of this website's progression.
 [CHANGELOG]: https://github.com/ahoym/ahoym.github.io/blob/master/CHANGELOG.md
 
 
-## Reflections
+## Reflections (Warning, super diary-esque)
 I had a lot of fun creating this site from scratch. It was a good learning experience to tinker with webpack, its various loaders, and React. This also let me sharpen my CSS3 skills while trying out BEM naming. Here are my thoughts and first experiences with some key technologies that I used:
 
 
