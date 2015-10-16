@@ -43,10 +43,11 @@
   }
 
   &__picture {
+    flex: 1;
     padding: 1.5rem 2rem 2rem 0;
 
     img {
-      height: auto;
+      height: 100%;
       width: 100%;
     }
   }

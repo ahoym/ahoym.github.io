@@ -1,3 +1,7 @@
+# 0.7.4
++ Hide NavBar for mobile
++ Style improvements for mobile
+
 # 0.7.3
 + Add resume to contact view, add and update tests.
 

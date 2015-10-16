@@ -26,11 +26,11 @@
 
   &__item {
     @extend .flex-container;
-    height: 64px;
-    margin: 2rem 0;
+    width: 100%;
   }
 
   &__list {
+    @extend .flex-container;
     list-style: none;
     padding: 0;
     width: 100%;

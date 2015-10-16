@@ -51,10 +51,10 @@ Tech.defaultProps = {
     },
     {
       title: 'Javascript Development',
-      items: [ 'babel', 'webpack', 'browserify', 'gulp', 'grunt' ]
+      items: [ 'babel', 'webpack', 'browserify', 'gulp' ]
     },
     {
-      title: 'Front-end Testing Libraries',
+      title: 'Front-end Testing',
       items: [ 'karma', 'mocha', 'jasmine', 'jest' ]
     },
     {

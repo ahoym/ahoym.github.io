@@ -69,28 +69,47 @@ a {
   background-size: cover;
 }
 
-
-@media (max-width: 1028px) {
-  html {
-    font-size: 13px;
-  }
-}
-
-@media (max-width: 768px) {
-  html {
-    font-size: 9px;
-  }
-
-  .hide-when-mobile {
-    display: none;
-  }
-
+@mixin hide-sprites() {
   .tech__item {
     justify-content: flex-start;
-    margin: 0;
+    float: left;
+    padding-right: 2rem;
+    width: 50%;
   }
 
   .tech__sprites {
     display: none;
   }
+}
+
+// tablets, anything smaller than a laptop screen
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+// landscape phones
+@media (max-width: 767px) {
+  @include hide-sprites();
+
+  html {
+    font-size: 9px;
+  }
+
+  .display, .hide-when-mobile, {
+    display: none;
+  }
+}
+
+// portrait phones
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  .about__me {
+    flex-flow: column wrap;
+  }
+}
+
+// sprites can't be resized from sprite sheet, so set a height break point.
+@media (max-height: 650px) {
+  @include hide-sprites();
 }
