@@ -40,8 +40,8 @@ export default class Experience extends React.Component {
                This reduced code duplication across applications.
             </li>
             <li>
-              Made blocking, synchronous rendering asynchronous with
-               javascript promises and functional programming, which made
+              Made blocking, synchronous rendering async with
+               javascript promises and functional programming. This made
                user experience better by displaying HTML elements faster.
             </li>
             <li>

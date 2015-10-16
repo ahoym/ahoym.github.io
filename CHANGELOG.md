@@ -1,3 +1,7 @@
+# 0.6.2
++ Hide overflow of particle layers in deep-dive section.
++ Grammar fix in Experience section
+
 # 0.6.1
 + Add media query induced style changes for mobile improvements
 + More spacing and text alignment for contact view.
