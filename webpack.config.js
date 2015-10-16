@@ -41,7 +41,7 @@ module.exports = {
           { publicPath: '' })
       },
       {
-        test: /\.woff(\?[0-9]+)?$/,
+        test: /\.(woff|pdf)(\?[0-9]+)?$/,
         loader: "url-loader?limit=10000&minetype=application/font-woff"
       },
       {

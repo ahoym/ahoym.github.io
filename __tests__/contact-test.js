@@ -17,10 +17,11 @@ describe('Contact', () => {
     let registerMockCalls = scrollHookMock.registerMock.mock.calls;
     let expectedElementClasses = [
       'contact__content',
+      'contact__documents',
       'contact__methods'
     ];
 
-    expect(registerMockCalls.length).toEqual(2);
+    expect(registerMockCalls.length).toEqual(3);
 
     expectedElementClasses.forEach((expectedClass, idx) => {
       let registeredEl = registerMockCalls[idx][0];
@@ -67,5 +68,16 @@ describe('Contact', () => {
 
     expect(emailEl.tagName).toEqual('LI');
     expect(emailEl.innerHTML).toEqual(expectedEmail);
+  });
+
+  it('renders a link to my resume', () => {
+    let resumeEl = TestUtils.findRenderedDOMComponentWithClass(
+                    contactView, 'contact__resume').getDOMNode();
+    // since we actually import the pdf through webpack, the jest preprocess
+    //  script nulls this value.
+    let expectedEmail = null;
+
+    expect(resumeEl.tagName).toEqual('LI');
+    expect(resumeEl.getAttribute('href')).toEqual(expectedEmail);
   });
 });

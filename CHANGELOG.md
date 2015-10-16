@@ -1,3 +1,6 @@
+# 0.7.3
++ Add resume to contact view, add and update tests.
+
 # 0.7.2
 + Remove fontello cruft to make styles bundle smaller;
    only keep `woff` file for icons.

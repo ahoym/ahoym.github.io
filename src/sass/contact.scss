@@ -22,21 +22,18 @@
   }
 
   ul {
+    @extend .flex-container;
     list-style: none;
+  }
 
-    li {
-      font-size: 1.5rem;
-      margin: 0 5vw 3vw 5vw;
-    }
+  li {
+    font-size: 1.5rem;
+    margin: 0 5vw 3vw 5vw;
   }
 
   &__content {
     @extend .flex-container;
     flex-flow: column wrap;
-  }
-
-  &__methods {
-    @extend .flex-container;
   }
 
   &__github {
@@ -49,6 +46,11 @@
 
   &__email {
     @include fontello-icon('\e800');
+    color: $app-blue;
+  }
+
+  &__resume {
+    @include fontello-icon('\e801');
     color: $app-blue;
   }
 }

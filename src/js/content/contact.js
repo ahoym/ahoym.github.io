@@ -1,4 +1,5 @@
 import '../../sass/contact.scss';
+import resume from '../../assets/resume.pdf';
 
 import React from 'react';
 import scrollHook from 'simple-scroll-hook';
@@ -6,18 +7,19 @@ import scrollHook from 'simple-scroll-hook';
 
 export default class Contact extends React.Component {
   componentDidMount() {
-    let contactContent = this.refs.contactContent.getDOMNode();
-    let contactMethods = this.refs.contactMethods.getDOMNode();
+    let { contactContent, contactMethods, contactDocuments } = this.refs;
+    let animateSlideRight = {
+      initialStates: 'hidden',
+      finalStates: 'slide-in-right'
+    };
 
     scrollHook
-      .register(contactContent, {
+      .register(contactContent.getDOMNode(), {
         initialStates: 'hidden',
         finalStates: 'slide-up'
       })
-      .register(contactMethods, {
-        initialStates: 'hidden',
-        finalStates: 'slide-in-right'
-      });
+      .register(contactDocuments.getDOMNode(), animateSlideRight)
+      .register(contactMethods.getDOMNode(), animateSlideRight);
   }
 
   render() {
@@ -36,9 +38,12 @@ export default class Contact extends React.Component {
       <section className='contact'>
         <div className='contact__content hidden' ref='contactContent'>
           <h1 className='common__section-title'>Contact Me</h1>
+          <ul className='contact__documents hidden' ref='contactDocuments'>
+            <li className='contact__email'>malcolmahoy@gmail.com</li>
+            <li className='contact__resume'><a href={resume}>Resume</a></li>
+          </ul>
           <ul className='contact__methods hidden' ref='contactMethods'>
             {contactMethods}
-            <li className='contact__email'>malcolmahoy@gmail.com</li>
           </ul>
         </div>
       </section>
