@@ -1,3 +1,7 @@
+# 0.7.1
++ Limit app width in the `#app` container. This resolves an issue where a
+   horizontal scroll bar would be introduced in larger screens.
+
 # 0.7.0
 + Add NavBar and NavBtn react components, styles, specs.
 
