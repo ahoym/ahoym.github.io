@@ -1,3 +1,6 @@
+# 0.7.0
++ Add NavBar and NavBtn react components, styles, specs.
+
 # 0.6.2
 + Hide overflow of particle layers in deep-dive section.
 + Grammar fix in Experience section

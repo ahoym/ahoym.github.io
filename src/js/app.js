@@ -9,6 +9,7 @@ import Experience from './content/experience';
 import DeepDive from './content/deep-dive';
 import Tech from './content/tech';
 import Contact from './content/contact';
+import NavBar from './content/nav-bar';
 
 
 export default class App extends React.Component {
@@ -26,6 +27,7 @@ export default class App extends React.Component {
         <DeepDive />
         <Tech />
         <Contact />
+        <NavBar />
       </div>
     );
   }

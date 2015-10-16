@@ -1,0 +1,61 @@
+@import 'variables';
+@import 'extendables';
+
+
+.nav-bar {
+  background-color: black;
+  border-top: 1px solid black;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 6vh;
+  width: 100%;
+  display: none;
+
+  p {
+    pointer-events: none;
+  }
+
+  ul {
+    @extend .flex-container;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  li {
+    color: $app-white;
+    text-align: center;
+    width: 14%;
+    transition: 0.15s ease-in;
+
+    &:hover {
+      color: $app-blue;
+    }
+  }
+
+  progress {
+    background-color: black;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  progress[value] {
+    appearance: none;
+    border: none;
+    color: $app-blue;
+  }
+  progress[value]::-webkit-progress-bar {
+    background-color: black;
+  }
+  progress[value]::-webkit-progress-value {
+    background-color: $app-blue;
+  }
+  progress[value]::-moz-progress-bar {
+    background-color: $app-blue;
+  }
+}
