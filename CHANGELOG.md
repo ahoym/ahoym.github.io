@@ -1,3 +1,7 @@
+# 0.7.2
++ Remove fontello cruft to make styles bundle smaller;
+   only keep `woff` file for icons.
+
 # 0.7.1
 + Limit app width in the `#app` container. This resolves an issue where a
    horizontal scroll bar would be introduced in larger screens.
