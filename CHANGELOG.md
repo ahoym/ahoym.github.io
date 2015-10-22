@@ -1,3 +1,6 @@
+# 0.7.5
++ Fix Hero section spacing for landscape mobile view.
+
 # 0.7.4
 + Hide NavBar for mobile
 + Style improvements for mobile

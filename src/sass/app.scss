@@ -112,4 +112,8 @@ a {
 // sprites can't be resized from sprite sheet, so set a height break point.
 @media (max-height: 650px) {
   @include hide-sprites();
+
+  .hero__title {
+    margin-bottom: 3rem;
+  }
 }
