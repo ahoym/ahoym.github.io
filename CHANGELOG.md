@@ -1,3 +1,11 @@
+# 0.7.6
++ Use ES6 destructuring assignment for React component references.
++ Remove stylesheet `import`s from js files. Since stylesheets are bundled
+   in a separate file anyway, they weren't really necessary. This also reduces
+   the stylesheet bundle size because it removes nested scss imports for common
+   styles. (Separate stylesheet enables browser cache-ing to do its thing)
++ Add an updated resume.   
+
 # 0.7.5
 + Fix Hero section spacing for landscape mobile view.
 
