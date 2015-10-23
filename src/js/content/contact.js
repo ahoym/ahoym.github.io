@@ -50,6 +50,7 @@ export default class Contact extends React.Component {
     );
   }
 }
+
 Contact.propTypes = {
   contactMethods: React.PropTypes.array
 };

@@ -8,15 +8,16 @@ import React from 'react';
 
 export default class DeepDive extends React.Component {
   componentDidMount() {
-    let diveEl = this.refs.deepDiveSection.getDOMNode();
-    let diveElDimensions = diveEl.getBoundingClientRect();
+    let { deepDiveSection, largeLayer, medLayer, smallLayer } = this.refs;
+
+    let diveElDimensions = deepDiveSection.getDOMNode().getBoundingClientRect();
     let diveElCenter = diveElDimensions.width / 2;
 
     this.setState({
       center: diveElCenter,
-      largeLayer: this.refs.largeLayer.getDOMNode(),
-      medLayer: this.refs.medLayer.getDOMNode(),
-      smallLayer: this.refs.smallLayer.getDOMNode()
+      largeLayer: largeLayer.getDOMNode(),
+      medLayer: medLayer.getDOMNode(),
+      smallLayer: smallLayer.getDOMNode()
     });
   }
 

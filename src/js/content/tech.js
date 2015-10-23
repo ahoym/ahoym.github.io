@@ -9,14 +9,13 @@ import TechItem from './tech-item';
 
 export default class Tech extends React.Component {
   componentDidMount() {
-    let techContent = this.refs.techContent.getDOMNode();
-    let techList = this.refs.techList.getDOMNode();
+    let { techContent, techList } = this.refs;
 
-    scrollHook.register(techContent, {
+    scrollHook.register(techContent.getDOMNode(), {
       initialStates: 'hidden',
       finalStates: 'slide-up'
     })
-    .register(techList, { finalStates: 'animation--stagger-in' });
+    .register(techList.getDOMNode(), { finalStates: 'animation--stagger-in' });
   }
 
   render() {

@@ -7,25 +7,22 @@ import scrollHook from 'simple-scroll-hook';
 
 export default class AboutMe extends React.Component {
   componentDidMount() {
-    let aboutContent = this.refs.aboutContent.getDOMNode();
-    let picture = this.refs.picture.getDOMNode();
-    let description = this.refs.description.getDOMNode();
-    let contributionsList = this.refs.contributions.getDOMNode();
+    let { aboutContent, picture, description, contributions } = this.refs;
 
     scrollHook
-      .register(aboutContent, {
+      .register(aboutContent.getDOMNode(), {
         initialStates: 'hidden',
         finalStates: 'slide-up'
       })
-      .register(picture, {
+      .register(picture.getDOMNode(), {
         initialStates: 'hidden',
         finalStates: 'slide-in-right'
       })
-      .register(description, {
+      .register(description.getDOMNode(), {
         initialStates: 'hidden',
         finalStates: 'about--stagger-in-p'
       })
-      .register(contributionsList, {
+      .register(contributions.getDOMNode(), {
         initialStates: 'hidden',
         finalStates: 'slide-up'
       });
@@ -83,6 +80,7 @@ export default class AboutMe extends React.Component {
     );
   }
 }
+
 AboutMe.propTypes = {
   contributions: React.PropTypes.array
 };

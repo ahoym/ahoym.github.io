@@ -6,9 +6,9 @@ import scrollHook from 'simple-scroll-hook';
 
 export default class Experience extends React.Component {
   componentDidMount() {
-    let experienceContent = this.refs.experienceContent.getDOMNode();
+    let { experienceContent } = this.refs;
 
-    scrollHook.register(experienceContent, {
+    scrollHook.register(experienceContent.getDOMNode(), {
       initialStates: 'hidden',
       finalStates: 'slide-up'
     });
@@ -25,7 +25,7 @@ export default class Experience extends React.Component {
               Web Application Developer
             </div>
             <div className='experience__duration'>
-              June 2014 - September 2015
+              June 2014 - August 2015
             </div>
           </div>
           <ul className='experience__duties'>
