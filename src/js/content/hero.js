@@ -1,5 +1,3 @@
-import '../../sass/hero.scss';
-
 import React from 'react';
 import smoothScroll from 'smoothscroll';
 

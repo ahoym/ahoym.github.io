@@ -1,6 +1,3 @@
-import '../../sass/tech.scss';
-import '../../sass/sprites.scss';
-
 import React from 'react';
 import scrollHook from 'simple-scroll-hook';
 

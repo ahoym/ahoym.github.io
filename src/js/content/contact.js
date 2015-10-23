@@ -1,4 +1,3 @@
-import '../../sass/contact.scss';
 import resume from '../../assets/resume.pdf';
 
 import React from 'react';

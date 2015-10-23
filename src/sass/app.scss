@@ -1,9 +1,20 @@
+// Common styles
 @import 'variables';
 @import 'extendables';
 @import 'transitions';
 @import 'common';
+@import 'sprites';
+
+// Component styles
+@import 'hero';
+@import 'about-me';
+@import 'experience';
+@import 'deep-dive';
+@import 'tech';
+@import 'contact';
 
 
+// Base styles
 * {
   box-sizing: border-box;
 }

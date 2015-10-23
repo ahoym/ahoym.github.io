@@ -1,4 +1,3 @@
-import '../../sass/deep-dive.scss';
 import largeParticleLayer from '../../assets/img/large-particles.png';
 import medParticleLayer from '../../assets/img/med-particles.png';
 import smallParticleLayer from '../../assets/img/small-particles.png';

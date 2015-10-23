@@ -1,4 +1,3 @@
-import '../../sass/about-me.scss';
 import me from '../../assets/img/ahoym.jpg';
 
 import React from 'react';
