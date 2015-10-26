@@ -1,3 +1,10 @@
+# 0.7.7
++ Use ES6 interpolation for class name constructions.
++ Always indent markup content for code clarity.
++ Remove stylesheet `import` from `nav-bar.js`. This was missed in the previous
+   patch. Increase specificity of nav-bar class to implement intended display
+   properties.
+
 # 0.7.6
 + Use ES6 destructuring assignment for React component references.
 + Remove stylesheet `import`s from js files. Since stylesheets are bundled
