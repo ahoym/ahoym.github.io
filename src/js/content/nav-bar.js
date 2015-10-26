@@ -1,5 +1,3 @@
-import '../../sass/nav-bar.scss';
-
 import React from 'react';
 import scrollHook from 'simple-scroll-hook';
 

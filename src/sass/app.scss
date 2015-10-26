@@ -12,6 +12,7 @@
 @import 'deep-dive';
 @import 'tech';
 @import 'contact';
+@import 'nav-bar';
 
 
 // Base styles
@@ -108,7 +109,7 @@ a {
     font-size: 9px;
   }
 
-  .display, .hide-when-mobile, {
+  .nav-bar.display, .hide-when-mobile, {
     display: none;
   }
 }

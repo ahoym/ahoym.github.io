@@ -8,6 +8,16 @@
    transform: translateY(0%);
  }
 }
+@keyframes pop-up {
+  0% {
+   opacity: 0;
+   transform: translateY(100%);
+ }
+ 100% {
+   opacity: 1;
+   transform: translateY(0%);
+ }
+}
 @keyframes slide-in-right {
   0% {
    opacity: 0;
@@ -38,7 +48,7 @@
 }
 
 .pop-up {
-  animation: slide-up 0.75s;
+  animation: pop-up 0.5s;
 }
 .slide-in-right {
   animation: slide-in-right 1.5s;
