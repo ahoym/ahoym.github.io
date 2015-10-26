@@ -37,6 +37,7 @@ export default class DeepDive extends React.Component {
 
   mouseUpdate(event) {
     event.preventDefault();
+    
     let mouseDeltas = this.computeMouseDeltas(event.clientX, event.clientY);
 
     this.state.largeLayer.style.transform = this.moveLayer(mouseDeltas, 1.75);

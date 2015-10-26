@@ -3,13 +3,17 @@ import React from 'react';
 
 
 export default class TechItem extends React.Component {
-  render() {
-    let sprites = this.props.techCategory.items.map((item) => {
-      let specificSprite = 'sprite--' + item.toLowerCase();
+  renderSprites() {
+    return this.props.techCategory.items.map((item) => {
+      let specificSprite = `sprite--${item.toLowerCase()}`;
       let classes = classnames('sprite', specificSprite);
 
       return (<span key={specificSprite} className={classes}></span>);
     });
+  }
+
+  render() {
+    let sprites = this.renderSprites();
 
     return (
       <li className='tech__item'>
@@ -28,6 +32,7 @@ export default class TechItem extends React.Component {
     );
   }
 }
+
 TechItem.propTypes = {
   techCategory: React.PropTypes.object
 };

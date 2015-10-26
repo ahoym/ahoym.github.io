@@ -15,7 +15,9 @@ export default class NavBtn extends React.Component {
   render() {
     return (
       <li onClick={this.handleClick.bind(this)}>
-        <p>{this.props.title}</p>
+        <p>
+          {this.props.title}
+        </p>
       </li>
     );
   }

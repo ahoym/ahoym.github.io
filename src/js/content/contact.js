@@ -21,25 +21,39 @@ export default class Contact extends React.Component {
       .register(contactMethods.getDOMNode(), animateSlideRight);
   }
 
-  render() {
-    let contactMethods = this.props.contactMethods.map((method) => {
-      let contactClass = 'contact__' + method.site.toLowerCase();
-      let contactLink = contactClass + '-link';
+  renderContactMethods() {
+    return this.props.contactMethods.map((method) => {
+      let contactClass = `contact__${method.site.toLowerCase()}`;
+      let contactLink = `${contactClass}-link`;
 
       return (
         <li key={method.site} className={contactClass}>
-          <a href={method.link} className={contactLink}>{method.site}</a>
+          <a href={method.link} className={contactLink}>
+            {method.site}
+          </a>
         </li>
       );
     });
+  }
+
+  render() {
+    let contactMethods = this.renderContactMethods();
 
     return (
       <section className='contact'>
         <div className='contact__content hidden' ref='contactContent'>
-          <h1 className='common__section-title'>Contact Me</h1>
+          <h1 className='common__section-title'>
+            Contact Me
+          </h1>
           <ul className='contact__documents hidden' ref='contactDocuments'>
-            <li className='contact__email'>malcolmahoy@gmail.com</li>
-            <li className='contact__resume'><a href={resume}>Resume</a></li>
+            <li className='contact__email'>
+              malcolmahoy@gmail.com
+            </li>
+            <li className='contact__resume'>
+              <a href={resume}>
+                Resume
+              </a>
+            </li>
           </ul>
           <ul className='contact__methods hidden' ref='contactMethods'>
             {contactMethods}

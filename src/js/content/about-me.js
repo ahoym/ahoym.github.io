@@ -27,19 +27,25 @@ export default class AboutMe extends React.Component {
       });
   }
 
-  render() {
-    let ossContributions = this.props.contributions.map((contribution) => {
-      return (
+  renderOssContributions() {
+    return this.props.contributions.map(contribution =>
         <li key={contribution.link}>
-          <a href={contribution.link}>{contribution.repo}</a>
+          <a href={contribution.link}>
+            {contribution.repo}
+          </a>
         </li>
-      );
-    });
+    );
+  }
+
+  render() {
+    let ossContributions = this.renderOssContributions();
 
     return (
       <section className='about'>
         <div className='about__content hidden' ref='aboutContent'>
-          <h3 className='common__section-title'>About Me</h3>
+          <h3 className='common__section-title'>
+            About Me
+          </h3>
           <div className='about__me'>
             <div className='about__picture hidden' ref='picture'>
               <img src={me} alt='Malcolm Ahoy' />

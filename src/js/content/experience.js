@@ -16,8 +16,12 @@ export default class Experience extends React.Component {
     return (
       <section className='experience'>
         <div className='experience__companies hidden' ref='experienceContent'>
-          <h3 className='common__section-title'>Experience</h3>
-          <h4 className='experience__company'>Yola.com</h4>
+          <h3 className='common__section-title'>
+            Experience
+          </h3>
+          <h4 className='experience__company'>
+            Yola.com
+          </h4>
           <div className='experience__info clearfix'>
             <div className='experience__title'>
               Web Application Developer

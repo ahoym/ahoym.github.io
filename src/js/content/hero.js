@@ -7,6 +7,7 @@ export default class Hero extends React.Component {
     event.preventDefault();
 
     let experienceSection = document.querySelector('section.about');
+
     smoothScroll(experienceSection, 1000);
   }
 
@@ -14,8 +15,12 @@ export default class Hero extends React.Component {
     return (
       <section className='hero'>
         <div className='hero__content'>
-          <h1 className='hero__name'>Malcolm Ahoy</h1>
-          <h2 className='hero__title'>Web Application Developer.</h2>
+          <h1 className='hero__name'>
+            Malcolm Ahoy
+          </h1>
+          <h2 className='hero__title'>
+            Web Application Developer.
+          </h2>
           <button className='hero__btn'
                   onClick={this.scrollToExperience}>
             Get to know me

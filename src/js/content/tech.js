@@ -15,15 +15,21 @@ export default class Tech extends React.Component {
     .register(techList.getDOMNode(), { finalStates: 'animation--stagger-in' });
   }
 
+  renderTechCategories() {
+    return this.props.categories.map(category =>
+      <TechItem key={category.title} techCategory={category} />
+    );
+  }
+
   render() {
-    let techCategories = this.props.categories.map((category) => {
-      return (<TechItem key={category.title} techCategory={category} />);
-    });
+    let techCategories = this.renderTechCategories();
 
     return (
       <section className='tech'>
         <div className='tech__content hidden' ref='techContent'>
-          <h3 className='common__section-title'>Technologies</h3>
+          <h3 className='common__section-title'>
+            Technologies
+          </h3>
           <ul className='tech__list' ref='techList'>
             {techCategories}
           </ul>
@@ -32,6 +38,7 @@ export default class Tech extends React.Component {
     );
   }
 }
+
 Tech.propTypes = {
   categories: React.PropTypes.array
 };
