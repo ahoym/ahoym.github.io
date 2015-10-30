@@ -51,4 +51,8 @@
     @include fontello-icon('\e801');
     color: $app-blue;
   }
+
+  &__site a {
+    margin-left: 0.5rem;
+  }
 }

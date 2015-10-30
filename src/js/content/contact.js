@@ -58,6 +58,13 @@ export default class Contact extends React.Component {
           <ul className='contact__methods hidden' ref='contactMethods'>
             {contactMethods}
           </ul>
+          <div className='contact__site'>
+            I completely made this site from scratch. Check out its
+             source
+             <a href='https://github.com/ahoym/ahoym.github.io'>
+              here
+            </a>!
+          </div>
         </div>
       </section>
     );

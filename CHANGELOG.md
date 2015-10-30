@@ -1,3 +1,8 @@
+# 1.0.0
++ Add a link to the github source code.
++ Set the major version to 1.0.0 because this project is practically done. More
+   additions are probably not likely until much later.
+
 # 0.7.7
 + Use ES6 interpolation for class name constructions.
 + Always indent markup content for code clarity.
